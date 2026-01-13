@@ -8,12 +8,11 @@
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
 # =========================
-# Python cache & compiled
+# Python cache & compiled files
 # =========================
 __pycache__/
 *.py[cod]
@@ -28,18 +27,20 @@ env/
 ENV/
 
 # =========================
-# Python packaging
+# Python packaging / build
 # =========================
 build/
 dist/
 *.egg-info/
 .eggs/
+pip-wheel-metadata/
 
 # =========================
-# Test & coverage
+# Test / coverage / reports
 # =========================
 .pytest_cache/
 .coverage
+coverage.xml
 htmlcov/
 .tox/
 .nox/
@@ -60,9 +61,22 @@ htmlcov/
 .vscode/
 .idea/
 *.swp
+*.swo
 
 # =========================
 # Environment variables
 # =========================
 .env
 .env.*
+
+# =========================
+# Database files (SQLite)
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# OS / temp files
+# =========================
+*.tmp
+*.temp
